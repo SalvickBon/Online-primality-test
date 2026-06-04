@@ -6,6 +6,7 @@
 .contenedor{
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
     background: #88FF6F;

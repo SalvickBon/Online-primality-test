@@ -1,0 +1,40 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <meta name="author" content="Nicolas Castaño">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test de primalidad</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+        <script type="text/javascript">
+            var eventoControlado = false;
+            window.onload = function() { 
+                document.onkeypress = mostrarInformacionCaracter;
+            }   
+            function mostrarInformacionCaracter(e) {
+                var msg = ''; 
+                var caracter = String.fromCharCode(e.which);
+                if (e.which==13) {
+                    msg = 'Se presiono Enter ' + caracter;
+                    console.log(msg);
+                    verificar();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <audio id="audio" controls style="display: none;">
+            <source id="source">
+        </audio>
+        <div class="contenedor">
+            <h1 style="margin-bottom: 50px;">Test de primalidad Online</h1>
+            <label for="entrada">Introduzca un numero</label>
+            <input name="entrada" type="text" id="entrada">
+            <button onclick="verificar()" id="boton">Verificar</button>
+            <p id="respuesta" style="overflow: auto; width: 200px; max-height: 200px;"></p>
+        </div>
+    </body>
+</html>
+

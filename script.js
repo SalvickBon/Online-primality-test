@@ -15,7 +15,7 @@ function verificar(){
     easy=false;
     for(let i=0; i<n; i++){
         for(let j=0; j<n; j++){
-            if(n%2==0 || n%3==0 || n%5==0 || n%7==0 || n%11==0 || n%13==0 || n%17==0 || n%23==0){
+            if(n%2==0 && n!=2 || n%3==0 && n!=3 || n%5==0 && n!=5 || n%7==0 && n!=7 || n%11==0 && n!=11 || n%13==0 && n!=13 || n%17==0 && n!=17 || n%23==0 && n!=23){
                 primalidad=false;
                 easy=true;
             }

@@ -37,6 +37,7 @@
     width: 200px;
     height: 40px;
     margin: 10px;
+    user-select: none;
 }
 
 #boton:hover{

@@ -56,7 +56,7 @@ function verificar(){
         source.setAttribute("type", "audio/wav");
         source.setAttribute("src", "compuesto.mp3");
         audio.load();
-        sleep(2000).then(() => {audio.play(); respuesta.textContent = "Compuesto: Se divide entre los primeros 8 numeros primos"});
+        sleep(2000).then(() => {audio.play(); respuesta.textContent = "Compuesto: Se divide entre los primeros 8 numeros primos."});
     }
     else{
         source.setAttribute("type", "audio/wav");
